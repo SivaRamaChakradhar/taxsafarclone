@@ -200,29 +200,14 @@
   flex-direction: column;
   gap: 12px;
   padding: 24px;
-  border-top: 1px solid #e2e8f3;
+  margin-top: auto;
   background: #fafbfc;
+  border-top: 1px solid #e2e8f3;
 }
 
 .mobile-nav-buttons .btn {
   width: 100%;
-  padding: 14px 16px;
-  font-size: 15px;
-  min-height: auto;
-  border-radius: 10px;
-}
-
-.mobile-nav-buttons .btn-ghost {
-  background: transparent;
-  border: 1.5px solid #c8d5ea;
-}
-
-.mobile-nav-buttons .btn-ghost:active {
-  background: #e8f2f1;
-}
-
-.mobile-nav-buttons .btn-primary {
-  width: 100%;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -304,6 +289,10 @@
     display: none;
   }
 
+  .mobile-nav-links {
+    margin-top: 72px;
+  }
+
   .mobile-menu-overlay {
     display: block;
   }
@@ -347,5 +336,6 @@
     padding: 20px 16px;
     gap: 10px;
   }
+
 }
 

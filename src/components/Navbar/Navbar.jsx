@@ -22,18 +22,15 @@ function Navbar() {
         </Link>
 
         <nav className="nav-links" aria-label="Main">
-          <a href="/#home">Home</a>
-          <a href="/#services">Services</a>
-          <a href="/#about">About</a>
-          <a href="/#contact">Contact</a>
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
         </nav>
 
         <div className="nav-actions">
-          <Link className="btn btn-ghost" to="/login">
+          <Link className="btn btn-ghost" to="/login" onClick={closeMenu}>
             Login
-          </Link>
-          <Link className="btn btn-primary" to="/register">
-            Get Started
           </Link>
         </div>
 
@@ -54,7 +51,7 @@ function Navbar() {
         <div className="mobile-menu-overlay" onClick={closeMenu} />
       )}
       <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
-        <nav className="mobile-nav-links">
+        <nav className="mobile-nav-links" aria-label="Mobile Main">
           <a href="/#home" onClick={closeMenu}>Home</a>
           <a href="/#services" onClick={closeMenu}>Services</a>
           <a href="/#about" onClick={closeMenu}>About</a>
@@ -64,9 +61,6 @@ function Navbar() {
         <div className="mobile-nav-buttons">
           <Link className="btn btn-ghost" to="/login" onClick={closeMenu}>
             Login
-          </Link>
-          <Link className="btn btn-primary" to="/register" onClick={closeMenu}>
-            Get Started
           </Link>
         </div>
       </div>
