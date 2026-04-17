@@ -220,16 +220,6 @@ npm run dev
 
 ---
 
-## 🔗 Social Media Links
-
-The footer includes direct links to:
-- **LinkedIn**: https://www.linkedin.com/company/107509228/
-- **WhatsApp**: https://wa.me/919784818899
-- **Google**: https://www.google.com/search?q=taxsafar
-- **Instagram**: https://instagram.com/taxsafar.official
-
----
-
 ## 📊 Browser Support
 
 - Chrome (latest)
@@ -281,25 +271,8 @@ dist/assets/index.js               244.34 kB | gzip: 77.67 kB
 - Clean folder structure for scalability
 - ESLint configuration ensures code quality
 - Production build is optimized and minified
-
----
-
-## 👨‍💻 Author
-
-Frontend Developer Internship - Round 1 Assignment
-Taxsafar UI/UX Redesign Project
-
 ---
 
 ## 📄 License
 
 This project is created as an assignment for the Frontend Developer Internship program.
-
----
-
-## 🙏 Acknowledgments
-
-- Vite for the amazing build tool
-- React for the framework
-- Google Fonts for typography
-- SVG icons for social media integration
