@@ -22,7 +22,7 @@ function Navbar() {
         </Link>
 
         <nav className="nav-links" aria-label="Main">
-          <a href="">Home</a>
+          <a href="/">Home</a>
           <a href="">Services</a>
           <a href="">About</a>
           <a href="">Contact</a>
