@@ -52,7 +52,7 @@ function Navbar() {
       )}
       <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
         <nav className="mobile-nav-links" aria-label="Mobile Main">
-          <a href="" onClick={closeMenu}>Home</a>
+          <a href="/" onClick={closeMenu}>Home</a>
           <a href="" onClick={closeMenu}>Services</a>
           <a href="" onClick={closeMenu}>About</a>
           <a href="" onClick={closeMenu}>Contact</a>
