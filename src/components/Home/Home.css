@@ -1,0 +1,526 @@
+main {
+  padding: 28px 44px 70px;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 14px;
+  min-height: 510px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: auto -120px -160px;
+  height: 290px;
+  background: radial-gradient(
+    75% 100% at 50% 0%,
+    rgba(163, 192, 232, 0.28),
+    rgba(242, 246, 252, 0)
+  );
+  pointer-events: none;
+}
+
+.hero-copy {
+  animation: slideUp 0.8s ease both;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  max-width: 480px;
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(44px, 5vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+  color: #21324a;
+}
+
+.hero-copy p {
+  margin: 28px 0 0;
+  max-width: 470px;
+  font-size: 35px;
+  line-height: 1.45;
+  color: #4a5a71;
+}
+
+.hero-buttons {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-art {
+  display: flex;
+  align-items: center;
+  animation: fadeScale 0.9s ease both;
+}
+
+.hero-home-image {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.services-section,
+.process-section {
+  padding-top: 54px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(38px, 4.1vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+  color: #24334d;
+}
+
+.section-header p {
+  margin: 16px auto 0;
+  max-width: 650px;
+  color: #5f6f88;
+  font-size: 32px;
+}
+
+.services-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-card {
+  background: linear-gradient(180deg, #f9fcff 0%, #f3f8ff 100%);
+  border: 1px solid #dbe5f3;
+  border-radius: 20px;
+  padding: 26px 22px 24px;
+  box-shadow: 0 15px 26px rgba(131, 151, 182, 0.14);
+  animation: slideUp 0.7s ease both;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.07s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.14s;
+}
+
+.service-icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #d2f2e4 0%, #b7e7d2 100%);
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: #2e8868;
+  border: 1px solid #bae2d0;
+}
+
+.service-card h3 {
+  margin: 18px 0 10px;
+  font-family: 'Sora', sans-serif;
+  font-size: 37px;
+  color: #25364f;
+}
+
+.service-card p {
+  margin: 0;
+  color: #60718a;
+  font-size: 30px;
+  line-height: 1.45;
+}
+
+.learn-link {
+  display: inline-flex;
+  margin-top: 18px;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #198f65;
+}
+
+.learn-link::after {
+  content: '->';
+}
+
+.process-grid {
+  margin-top: 28px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.step-card {
+  background: linear-gradient(180deg, #f9fcff 0%, #f3f8ff 100%);
+  border: 1px solid #dbe5f3;
+  border-radius: 20px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.step-number {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-size: 33px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #31bf80 0%, #2e9ecf 100%);
+  box-shadow: 0 10px 20px rgba(55, 164, 136, 0.3);
+}
+
+.step-card h3 {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-size: 34px;
+  color: #22344e;
+}
+
+.step-card p {
+  margin: 4px 0 0;
+  color: #5e7089;
+  font-size: 29px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1440px) {
+  main {
+    padding: 24px 32px 60px;
+  }
+
+  .hero-copy p {
+    font-size: clamp(26px, 2.8vw, 35px);
+  }
+
+  .section-header p {
+    font-size: clamp(26px, 2.6vw, 32px);
+  }
+
+  .service-card p,
+  .learn-link {
+    font-size: clamp(24px, 2.4vw, 30px);
+  }
+
+  .step-card p {
+    font-size: clamp(22px, 2.2vw, 29px);
+  }
+}
+
+@media (max-width: 1120px) {
+  main {
+    padding: 20px 24px 50px;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: auto;
+  }
+
+  .hero-copy {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .hero-copy h1,
+  .hero-copy p {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: clamp(12px, 2vw, 14px);
+  }
+
+  .hero-art {
+    width: min(480px, 100%);
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section,
+  .process-section {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 18px 16px 42px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(32px, 5vw, 48px);
+  }
+
+  .hero-copy p {
+    margin-top: 16px;
+    font-size: clamp(18px, 3vw, 28px);
+  }
+
+  .hero-buttons {
+    margin-top: 24px;
+    gap: clamp(10px, 2vw, 12px);
+  }
+
+  .section-header h2 {
+    font-size: clamp(32px, 4vw, 44px);
+  }
+
+  .section-header p {
+    font-size: clamp(18px, 2.5vw, 26px);
+    margin-top: 12px;
+  }
+
+  .services-grid {
+    gap: 14px;
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px 18px 18px;
+    border-radius: 16px;
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 15px;
+  }
+
+  .service-card h3 {
+    font-size: clamp(22px, 3.5vw, 32px);
+    margin-top: 14px;
+  }
+
+  .service-card p,
+  .learn-link {
+    font-size: clamp(15px, 2.2vw, 22px);
+  }
+
+  .process-grid {
+    gap: 14px;
+  }
+
+  .step-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .step-number {
+    width: 52px;
+    height: 52px;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .step-card h3 {
+    font-size: clamp(20px, 3vw, 30px);
+  }
+
+  .step-card p {
+    font-size: clamp(14px, 2vw, 21px);
+  }
+
+  .services-section,
+  .process-section {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 14px 12px 36px;
+  }
+
+  .hero-section {
+    gap: 18px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(24px, 6vw, 36px);
+    line-height: 1.2;
+  }
+
+  .hero-copy p {
+    margin-top: 12px;
+    font-size: clamp(15px, 2.5vw, 20px);
+  }
+
+  .hero-buttons {
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-art {
+    width: 100%;
+  }
+
+  .section-header h2 {
+    font-size: clamp(24px, 5.5vw, 36px);
+  }
+
+  .section-header p {
+    font-size: clamp(14px, 2.2vw, 18px);
+    margin-top: 10px;
+  }
+
+  .services-grid {
+    gap: 12px;
+  }
+
+  .service-card {
+    padding: 16px 14px;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .service-card h3 {
+    font-size: clamp(18px, 4vw, 26px);
+    margin-top: 12px;
+  }
+
+  .service-card p,
+  .learn-link {
+    font-size: clamp(13px, 2vw, 17px);
+  }
+
+  .process-grid {
+    gap: 12px;
+  }
+
+  .step-card {
+    padding: 14px;
+    gap: 10px;
+    grid-template-columns: 48px 1fr;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .step-card h3 {
+    font-size: clamp(16px, 3.5vw, 24px);
+  }
+
+  .step-card p {
+    font-size: clamp(12px, 1.8vw, 16px);
+  }
+
+  .services-section,
+  .process-section {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    padding: 12px 10px 30px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(20px, 6vw, 28px);
+  }
+
+  .hero-copy p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+
+  .section-header p {
+    font-size: 13px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .step-card h3 {
+    font-size: 14px;
+  }
+
+  .step-card p {
+    font-size: 11px;
+  }
+}

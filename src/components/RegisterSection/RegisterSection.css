@@ -1,0 +1,170 @@
+.register-section {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid #d8e3f3;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #f7fbff 0%, #eef4fd 60%, #ebf2fb 100%);
+  box-shadow: 0 20px 40px rgba(109, 134, 170, 0.12);
+}
+
+.register-card {
+  border-radius: 24px;
+  padding: 30px 28px;
+  border: 1px solid #d2dfef;
+  background: #ffffff;
+}
+
+.register-card h2 {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #21324a;
+}
+
+.register-card p {
+  margin: 12px 0 0;
+  color: #5b6e87;
+  font-size: clamp(16px, 1.5vw, 21px);
+  line-height: 1.45;
+}
+
+.register-form {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.register-form label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a3f5c;
+}
+
+.register-form input {
+  width: 100%;
+  border: 1px solid #c7d6ea;
+  border-radius: 11px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #1f314a;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-form input:focus {
+  border-color: #25a474;
+  box-shadow: 0 0 0 3px rgba(37, 164, 116, 0.15);
+}
+
+.register-submit {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.register-success {
+  margin: 10px 0 0;
+  color: #188457;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 1120px) {
+  .register-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .register-card {
+    padding: 28px 24px;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-section {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .register-card {
+    border-radius: 20px;
+    padding: 24px 22px;
+  }
+
+  .register-card h2 {
+    font-size: clamp(28px, 4vw, 40px);
+  }
+
+  .register-form input {
+    padding: clamp(10px, 1.5vw, 12px) clamp(12px, 1.8vw, 14px);
+    font-size: clamp(14px, 1.6vw, 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .register-section {
+    padding: 16px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .register-card {
+    border-radius: 16px;
+    padding: 20px 18px;
+  }
+
+  .register-card h2 {
+    font-size: clamp(24px, 5vw, 32px);
+  }
+
+  .register-card p {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  .register-form {
+    gap: 12px;
+  }
+
+  .register-form label {
+    font-size: 14px;
+  }
+
+  .register-form input {
+    padding: 10px 12px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+
+  .register-submit {
+    min-height: 44px;
+  }
+
+  .register-success {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .register-section {
+    padding: 14px;
+  }
+
+  .register-card {
+    padding: 16px 14px;
+  }
+
+  .register-card h2 {
+    font-size: 20px;
+  }
+
+  .register-card p {
+    font-size: 12px;
+  }
+
+  .register-form input {
+    font-size: 13px;
+  }
+}
