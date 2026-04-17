@@ -140,7 +140,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/taxsafarclone.git
+git clone https://github.com/sivaramachakradhar/taxsafarclone.git
 cd taxsafarclone
 
 # Install dependencies
